@@ -14,5 +14,13 @@
     "idf.port": "/dev/ttyUSB0",
     "idf.pythonBinPath": "python",
     "idf.toolsPath": "/home/mint/.espressif",
-    "idf.flashType": "UART"
+    "idf.flashType": "UART",
+    "files.associations": {
+        "task.h": "c",
+        "rmt_tx.h": "c",
+        "led_strip_encoder.h": "c",
+        "led_strip_config.h": "c",
+        "esp_log.h": "c",
+        "freertos.h": "c"
+    }
 }

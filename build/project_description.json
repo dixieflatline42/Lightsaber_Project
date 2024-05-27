@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "lightsaber_2",
-    "project_version":    "1",
+    "project_version":    "915a2c7-dirty",
     "project_path":       "/home/mint/projects/_esp/lightsaber_2",
     "idf_path":           "/home/mint/esp/esp-idf",
     "build_dir":          "/home/mint/projects/_esp/lightsaber_2/build",
@@ -805,7 +805,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/mint/projects/_esp/lightsaber_2/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/mint/projects/_esp/lightsaber_2/main/led_strip_example_main.c", "/home/mint/projects/_esp/lightsaber_2/main/led_strip_encoder.c" ],
+            "sources": [ "/home/mint/projects/_esp/lightsaber_2/main/led_strip_config.c", "/home/mint/projects/_esp/lightsaber_2/main/main.c", "/home/mint/projects/_esp/lightsaber_2/main/led_strip_encoder.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
