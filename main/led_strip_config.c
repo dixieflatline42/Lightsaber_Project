@@ -86,7 +86,7 @@ void led_strip_hsv2rgb(uint32_t h, uint32_t s, uint32_t v, uint32_t *r, uint32_t
     }
 }
 
-void sabre_liga()
+void lightsaber_fadein()
 {
     // Ligar os LEDs sequencialmente na cor verde
     for (int j = 0; j < EXAMPLE_LED_NUMBERS; j++) {

@@ -1,4 +1,4 @@
-/* * Data converted from /home/mint/projects/_esp/lightsaber_2/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/mint/projects/_esp/lightsaber/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

@@ -1,4 +1,4 @@
-# Install script for directory: /home/mint/projects/_esp/lightsaber_2/main
+# Install script for directory: /home/mint/projects/_esp/lightsaber/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

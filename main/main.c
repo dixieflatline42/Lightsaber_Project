@@ -6,12 +6,14 @@
 #include "main.h"
 // static const char *TAG = "Main";
 
-
 void app_main(void)
 {
+    adxl345_setup();
     led_strip_setup();
 
+    xTaskCreate(task_adxl345, "adxl345_task", 2048, NULL, 5, NULL);
+    
     while (1) {
-        sabre_liga();
+        lightsaber_fadein();
     }
 }
