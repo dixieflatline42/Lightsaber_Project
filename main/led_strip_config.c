@@ -89,12 +89,24 @@ void led_strip_hsv2rgb(uint32_t h, uint32_t s, uint32_t v, uint32_t *r, uint32_t
 void lightsaber_fadein()
 {
     // Ligar os LEDs sequencialmente na cor verde
-    for (int j = 0; j < EXAMPLE_LED_NUMBERS; j++) {
+    for (int j = 0; j < EXAMPLE_LED_NUMBERS/2; j++) {
         led_strip_pixels[j * 3 + 0] = green; // Componente R: 0
         led_strip_pixels[j * 3 + 1] = 0;     // Componente G: 255 (verde)
         led_strip_pixels[j * 3 + 2] = 0;     // Componente B: 0
+
+        // Acende LEDs da segunda metade (244 a 145, na ordem inversa)
+        int reverse_index = EXAMPLE_LED_NUMBERS - j;
+        led_strip_pixels[reverse_index * 3 + 0] = green;
+        led_strip_pixels[reverse_index * 3 + 1] = 0;
+        led_strip_pixels[reverse_index * 3 + 2] = 0;
+
         ESP_ERROR_CHECK(rmt_transmit(led_chan, led_encoder, led_strip_pixels, sizeof(led_strip_pixels), &tx_config));
         ESP_ERROR_CHECK(rmt_tx_wait_all_done(led_chan, portMAX_DELAY));
         vTaskDelay(pdMS_TO_TICKS(EXAMPLE_CHASE_SPEED_MS));
     }
+}
+
+void lightsaber_fadeout()
+{
+    
 }
