@@ -8,8 +8,8 @@
 #include "led_strip_encoder.h"
 
 #define RMT_LED_STRIP_RESOLUTION_HZ 10000000 // 10MHz resolution, 1 tick = 0.1us (led strip needs a high resolution)
-#define RMT_LED_STRIP_GPIO_NUM      16
-#define EXAMPLE_LED_NUMBERS         50
+#define RMT_LED_STRIP_GPIO_NUM      2
+#define EXAMPLE_LED_NUMBERS         144
 #define EXAMPLE_CHASE_SPEED_MS      100
 
 void led_strip_setup();
