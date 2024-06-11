@@ -7,3 +7,4 @@
 
 #include "led_strip_config.h"
 #include "adxl345_i2c.h"
+#include "dfminiplayer_uart.h"

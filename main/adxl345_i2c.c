@@ -55,6 +55,5 @@ void adxl345_read_data(int16_t *x, int16_t *y, int16_t *z)
 
     *x = (data[1] << 8) | data[0];
     *y = (data[3] << 8) | data[2];
-    
     *z = (data[5] << 8) | data[4];
 }
