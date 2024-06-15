@@ -13,16 +13,17 @@
 #define RXD_PIN  GPIO_NUM_17
 #define UART_NUM UART_NUM_1
 
-void uart_init();
-void sendCommand(uint8_t command, uint16_t parameter);
-void sendCommand(uint8_t command, uint16_t parameter);
+void dfmplayer_uart_init();
+void dfmplayer_send_cmd(uint8_t command, uint16_t parameter);
 void send_raw_command(uint8_t buf[], size_t size);
 void dfmplayer_reset();
 void init_dfmplayer();
 void set_dfmplayer_volume(int volume);
 void dfmplayer_play();
 void dfmplayer_next();
-bool waitForResponse();
+void dfmplayer_spec_playback(int track);
+void dfmplayer_spec_playback_single_repeat(int track);
+bool dfmplayer_wait_resp();
 
 #define QUERY_STATUS 1
 #define SET_VOLUME   2
