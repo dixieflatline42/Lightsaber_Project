@@ -7,8 +7,10 @@
 
 * ADXL345 Module Implementation via I2C.
 * WS2812 Led Strip Implementation via RMT.
-* Module MP3 (not implentated yet).
-* Push botton to fade in or fade out the Lightsaber (not implentated yet).
+* Module MP3 via UART.
+* Push botton to fade in or fade out the Lightsaber via ISR.
+
+Attention: All implemetaded but not work together
 
 # RMT Transmit -- LED Strip
 
