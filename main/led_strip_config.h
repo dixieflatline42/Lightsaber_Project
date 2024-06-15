@@ -16,6 +16,6 @@ void led_strip_setup();
 void led_strip_hsv2rgb(uint32_t h, uint32_t s, uint32_t v, uint32_t *r, uint32_t *g, uint32_t *b);
 void lightsaber_fadein();
 void lightsaber_fadeout();
-void lightsaber_turnoff();
+void lightsaber_turnon(int r, int g, int b);
 
 #endif /* LED_STRIP_CONFIG_H */
